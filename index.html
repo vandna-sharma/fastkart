@@ -8,7 +8,9 @@
         <link rel="icon" href="asset\images\icon.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="asset\css\style.css">
-       
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
        
         <link rel="stylesheet" href="asset\font-awesome-4.7.0\font-awesome-4.7.0\css\font-awesome.min.css">
     </head>
@@ -294,7 +296,7 @@
           <!--home section start-->
   <div class="home-section">
     <div class="home-section-row">
-        <div class="home-section-left">
+        <div class="home-section-left ">
             <div class="left-container">
                 <div class="offer"><p class="discount">Exclusive offer</p><span>30% Off</span></div>
                 <div class="offer-content"><h2>STAY HOME & DELIVERED YOUR</h2><span>DAILY NEEDS</span></div>
@@ -337,7 +339,7 @@
 <!--home section ends-->
 <!--slider1-->
 <div class="slider1">
-<div class="slider1-row">
+<div class="slider1-row  animate__animated animate__bounce" >
   <div class="slider-image">
    
         <div class="slider1-content">
@@ -491,7 +493,7 @@
         </div>
         <div class="product-table">
             <div class="product-table-row">
-                <div class="product-table-col">
+                <div class="product-table-col" >
                     <div class="product-image"><img src="asset/images/1.png"></div>
                     <div class="product-detail">
                         <a href=""><h6 class="name">Fantasy Crunchy Choco Chip Cookies</h6></a>
@@ -737,7 +739,8 @@
 
 <div class="offer-content">
     <div class="offer-content-row">
-        <div class="offer-content-col1">
+        <div class="offer-content-col1" data-aos="flip-right"
+        data-aos-anchor-placement="top-center">
             <div class="offer-col1-content">
                 <h4>50% offer</h4>
                 <h5>Tasty Mushrooms</h5>
@@ -769,8 +772,8 @@
     </div>
 </div>
 <div class="product-table-row">
-    <div class="product-table-col col7">
-        <div class="product-image"><img src="asset/images/1.png"></div>
+    <div class="product-table-col col7" >
+        <div class="product-image"  ><img src="asset/images/1.png" ></div>
         <div class="product-detail">
             <a href=""><h6 class="name">Cold Brew Coffee Instant Coffee 50 g</h6></a>
             <h5 class="sold text-content">
@@ -1160,4 +1163,9 @@
   <div class="setting"> <a href="" > <i class="fa fa-cog" aria-hidden="true"></i> </a>
            </div>
    </body>
+   <script>
+  
+  new WOW().init();
+
+    </script>
 </html>
