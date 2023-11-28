@@ -14,6 +14,7 @@ body{
 header{
     background-color: #0da487;
    
+   
  
 }
    
@@ -26,8 +27,10 @@ header{
 
 
 .top-header-content{
-    width: 1080px;
+   
     margin: auto;
+    width: 1080px;
+    background-color: #0da487;
     padding: 10px 0px;
     display: flex;
     align-items: center;
@@ -254,6 +257,7 @@ input{
     display: inline-block;
     padding-right: 10px;
     font-size: 16px;
+    padding-left: 10px;
 
     
 
@@ -321,7 +325,7 @@ input{
     z-index: 99999999;
           background-color:white;
          padding: 10px 20px;
-          margin-top: 5px;
+          
           border-radius: 5px;
           min-height: 200px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -351,6 +355,7 @@ input{
 .categories-dropdown:hover .categories-drop{
     display: block;
     width: 300px;
+    
     
 }
 
