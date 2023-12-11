@@ -13,6 +13,8 @@
 
     
     <link rel="stylesheet" href="asset\js\animate.css">
+    <link rel="stylesheet" href="asset/css/jquery-confirm.css">
+
        
       
        
@@ -81,7 +83,9 @@
                     <a href="" class="marker"><i class="fa fa-map-marker"></i></a>
                 </div>
                 <div class="location-bar">
-                    <a href="" class="angle-down">Your Location<i class="fa fa-angle-down"></i></a>
+                    <button id="location-pop" class="angle-down" >Your Location<i class="fa fa-angle-down"></i></button>
+                    
+                    
                 </div>
           
             
@@ -489,7 +493,7 @@
                 <div class="time">
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
                     <h6 class="name">Expires in :</h6>
-                    <p> 10:14:15</p>
+                    <p id="countdown"> 10:14:15</p>
 
                 </div>
 
@@ -1169,9 +1173,55 @@
            </div>
    </body>
    <script src="asset\js\wow.js"></script>
+   <script src="asset/js/jquery.js"></script>
+   <script src="asset/js/jquery-confirm.js"></script>
+   <script src="asset/js/bootstrap.js"></script>
    
    <script>
-      new WOW().init();
-   </script>
+  
+   $('#location-pop').on('click', function() {
+       $.dialog({
+    title: 'Text content!',
+    content: 'Simple modal!',
+});
+
+    });
+   
+
+var countDownDate = new Date("Dec 31, 2023 24:00:00").getTime();
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+
+
+  var distance = countDownDate - now;
+
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+new WOW().init();
+</script>
+
+
+
+
+
+ 
+
+   
    
 </html>

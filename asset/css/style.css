@@ -154,6 +154,7 @@ header{
 }
 .location{
     width: 20%;
+    
 }
 .marker{
     display: flex;
@@ -177,7 +178,25 @@ border: 1px solid rgb(243, 230, 230);
 border-radius: 5px;
 padding: 5px 10px;
 margin: 0px 10px;
+
 }
+#location-pop{
+    color: #0da487;
+    border: none;
+background: none;
+font-size: 16px;
+cursor: pointer;
+}
+
+
+.jc-bs3-row
+{   
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+}
+
 
 
 .location-bar a{
@@ -1718,4 +1737,10 @@ padding:0px 5px;
 .setting i{
     font-size: 22px;
     color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .header-menubar{
+        display: none;
+    }
 }
